@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="aos/dist/aos.css" />
+    <title>News Article</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="login-overlay form-overlay">
+        <div class="form-wrapper">
+          <form class="form-window" id="login-window">
+            <div class="form-window__cross"></div>
+            <div class="form-inner">
+              <h4 class="form-inner__h4">Log in</h4>
+              <fieldset class="form-inner__fieldset">
+                <label class="form-inner__tel-label" for="login-form-phone"
+                  >Enter your phone number*</label
+                >
+                <input
+                  class="form-inner__login-tel-input"
+                  id="login-form-phone"
+                  type="tel"
+                  required
+                  autocomplete="off"
+                /><img
+                  class="form-inner__tel-valid form-inner__valid display-none"
+                  src="img/contact-valid.svg"
+                  alt=""
+                /><img
+                  class="form-inner__tel-invalid form-inner__invalid display-none"
+                  src="img/popup-info.svg"
+                  alt=""
+                />
+                <div class="form-inner__popup-tel form-inner__popup">
+                  <span
+                    >Phone number must be according to your regional
+                    standards</span
+                  >
+                </div>
+                <span
+                  class="form-inner__error-tel form-inner__error display-none"
+                >
+                </span>
+              </fieldset>
+              <fieldset class="form-inner__fieldset">
+                <label
+                  class="form-inner__password-label"
+                  for="login-form-password"
+                  >Enter your password*</label
+                >
+                <input
+                  id="login-form-password"
+                  type="password"
+                  placeholder="Password"
+                  required
+                /><span
+                  class="form-inner__login-error-password form-inner__error display-none"
+                  >This field is required</span
+                >
+                <button class="btn" id="login-form-send" type="submit">
+                  Log in
+                </button>
+                <p class="form-inner__bottom-p">
+                  Don’t have an account yet?<a
+                    class="signup"
+                    href="javascript:void(0);"
+                    >Sign up</a
+                  >
+                </p>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="signup-overlay form-overlay">
+        <div class="form-wrapper">
+          <form class="form-window" id="signup-window" action="thank-you.html">
+            <div class="form-window__cross"></div>
+            <div class="form-inner">
+              <h4 class="form-inner__h4">Sign up</h4>
+              <fieldset class="form-inner__fieldset">
+                <label class="form-inner__name-label" for="signup-form-name"
+                  >Enter your full name*</label
+                >
+                <input
+                  class="form-inner__signup-name-input"
+                  id="signup-form-name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                /><img
+                  class="form-inner__name-valid form-inner__valid display-none"
+                  src="img/contact-valid.svg"
+                  alt=""
+                /><img
+                  class="form-inner__name-invalid form-inner__invalid display-none"
+                  src="img/popup-info.svg"
+                  alt=""
+                />
+                <div class="form-inner__popup-name form-inner__popup">
+                  <span>Name must contain only Latin characters</span>
+                  <ul>
+                    <li>
+                      <p>Capital Latin letters: from A to Z</p>
+                    </li>
+                    <li>
+                      <p>Lowercase Latin letters: from a to z</p>
+                    </li>
+                  </ul>
+                </div>
+                <span
+                  class="form-inner__error-name form-inner__error display-none"
+                ></span>
+              </fieldset>
+              <fieldset class="form-inner__fieldset">
+                <label class="form-inner__tel-label" for="signup-form-phone"
+                  >Enter your phone number*</label
+                >
+                <input
+                  class="form-inner__signup-tel-input"
+                  id="signup-form-phone"
+                  type="tel"
+                  required
+                  autocomplete="off"
+                /><img
+                  class="form-inner__signup-tel-valid form-inner__valid display-none"
+                  src="img/contact-valid.svg"
+                  alt=""
+                /><img
+                  class="form-inner__signup-tel-invalid form-inner__invalid display-none"
+                  src="img/popup-info.svg"
+                  alt=""
+                />
+                <div class="form-inner__signup-popup-tel form-inner__popup">
+                  <span
+                    >Phone number must be according to your regional
+                    standards</span
+                  >
+                </div>
+                <span
+                  class="form-inner__signup-error-tel form-inner__error"
+                ></span>
+              </fieldset>
+              <fieldset class="form-inner__fieldset">
+                <label class="form-inner__mail-label" for="signup-form-email"
+                  >Enter your email address</label
+                >
+                <input
+                  class="form-inner__mail-input"
+                  id="signup-form-email"
+                  type="email"
+                  placeholder="Example@gmail.com"
+                  required
+                  autocomplete="off"
+                /><img
+                  class="form-inner__mail-valid form-inner__valid display-none"
+                  src="img/contact-valid.svg"
+                  alt=""
+                /><img
+                  class="form-inner__mail-invalid form-inner__invalid display-none"
+                  src="img/popup-info.svg"
+                  alt=""
+                />
+                <div class="form-inner__popup-mail form-inner__popup">
+                  <span>Email must contain</span>
+                  <ul>
+                    <li>
+                      <p>Latin letters</p>
+                    </li>
+                    <li>
+                      <p>@ symbol</p>
+                    </li>
+                    <li>
+                      <p>domain like .com</p>
+                    </li>
+                  </ul>
+                </div>
+                <span
+                  class="form-inner__error-mail form-inner__error display-none"
+                ></span>
+              </fieldset>
+              <fieldset class="form-inner__fieldset">
+                <label
+                  class="form-inner__password-label"
+                  for="signup-form-password"
+                  >Enter your password*</label
+                >
+                <input
+                  class="form-inner__password-input"
+                  id="signup-form-password"
+                  type="password"
+                  placeholder="Password"
+                  required
+                  autocomplete="off"
+                /><img
+                  class="form-inner__password-valid form-inner__valid display-none"
+                  src="img/contact-valid.svg"
+                  alt=""
+                /><img
+                  class="form-inner__password-invalid form-inner__invalid display-none"
+                  src="img/popup-info.svg"
+                  alt=""
+                />
+                <div class="form-inner__popup-password form-inner__popup">
+                  <span
+                    >To protect your data, you need to come up with a secure
+                    password. It must contain</span
+                  >
+                  <ul>
+                    <li>
+                      <p>8 or more characters</p>
+                    </li>
+                    <li>
+                      <p>uppercase latin letters</p>
+                    </li>
+                    <li>
+                      <p>lowercase latin letters</p>
+                    </li>
+                    <li>
+                      <p>numbers</p>
+                    </li>
+                    <li>
+                      <p>
+                        Punctuation marks <br />! "# $% & '() * +, -.
+                        /:;&lt;=&gt;? <br />
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <span
+                  class="form-inner__error-password form-inner__error display-none"
+                  >This field is required</span
+                >
+              </fieldset>
+              <fieldset class="form-inner__fieldset">
+                <label
+                  class="form-inner__confirm-label"
+                  for="signup-form-confirm"
+                  >Confirm your password*</label
+                >
+                <input
+                  class="form-inner__confirm-input"
+                  id="signup-form-confirm"
+                  type="password"
+                  placeholder="Confirm your password"
+                  required
+                  autocomplete="off"
+                /><img
+                  class="form-inner__confirm-valid form-inner__valid display-none"
+                  src="img/contact-valid.svg"
+                  alt=""
+                /><img
+                  class="form-inner__confirm-invalid form-inner__invalid display-none"
+                  src="img/popup-info.svg"
+                  alt=""
+                /><span
+                  class="form-inner__error-confirm form-inner__error display-none"
+                ></span>
+              </fieldset>
+              <button
+                class="btn form-inner__submit"
+                id="signup-form-send"
+                type="submit"
+              >
+                Sign up
+              </button>
+              <p class="form-inner__bottom-p">
+                Have an account already?<a
+                  class="login"
+                  href="javascript:void(0);"
+                  >Log In</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="header__wrapper">
+        <a class="header__logo" href="index.html"
+          ><img src="/img/logo.svg" alt="logo" width="70"
+        /></a>
+        <button class="header__hamburger"></button>
+        <button class="header__cross"></button>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a class="header__link" href="index.html">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="about-forex.html">About Forex</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="market-analysis.html"
+                >Market Analysis</a
+              >
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="about-us.html">About us</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="education.html">Education</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="news.html">News</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="contacts.html"> Contacts </a>
+            </li>
+            <li class="header__item">
+              <a class="header__btn btn signup" href="javascript:void(0)"
+                >Get started</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="wrapper">
+      <section class="article">
+        <article class="article__text">
+          <h2 class="article__h2">
+            Oil drops as surging COVID-19 infections stoke demand concerns
+          </h2>
+          <img class="article__img" src="img/article.jpg" alt="" />
+          <p class="article__p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <p class="article__p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <a class="btn article__btn" href="news.html">Back to news</a>
+        </article>
+        <div class="article__related">
+          <h2>Related news</h2>
+          <ul class="article__list">
+            <li class="article__item">
+              <p>
+                Oil drops as surging COVID-19 infections stoke demand concerns
+              </p>
+              <a class="btn" href="article.html">Read</a>
+            </li>
+            <li class="article__item">
+              <p>
+                Oil drops as surging COVID-19 infections stoke demand concerns
+              </p>
+              <a class="btn" href="article.html">Read</a>
+            </li>
+            <li class="article__item">
+              <p>
+                Oil drops as surging COVID-19 infections stoke demand concerns
+              </p>
+              <a class="btn" href="article.html">Read</a>
+            </li>
+            <li class="article__item">
+              <p>
+                Oil drops as surging COVID-19 infections stoke demand concerns
+              </p>
+              <a class="btn" href="article.html">Read</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__subscribe">
+          <form class="footer__form" action="thank-you.html">
+            <p class="footer__form-p">
+              Keep up to date with all the latest news
+            </p>
+            <input
+              class="footer__email"
+              id="mail"
+              type="email"
+              name=""
+              placeholder="Example@gmail.com"
+              required
+            />
+            <button class="btn footer__btn nopointer" type="submit">
+              Submit</button
+            ><span class="footer__form-error display-none"
+              >This field is required</span
+            ><a class="footer__logo" href="index.html"
+              ><img src="/img/logo.svg" alt="logo" width="100"
+            /></a>
+          </form>
+        </div>
+        <div class="footer__links">
+          <div class="footer__nav">
+            <h3 class="footer__h3">Navigation</h3>
+            <a class="footer__link-item" href="about-forex.html">About Forex</a
+            ><a class="footer__link-item" href="market-analysis.html"
+              >Market analysis</a
+            ><a class="footer__link-item" href="about-us.html">About us</a
+            ><a class="footer__link-item" href="education.html">Education</a
+            ><a class="footer__link-item" href="news.html">News</a
+            ><a class="footer__link-item" href="contacts.html">Contacts</a>
+          </div>
+          <div class="footer__contacts">
+            <h3 class="footer__h3">Contacts</h3>
+            <a class="footer__link-item" href="tel:+00000000000">+41215303116</a
+              ><!-- <a class="footer__link-item" href="tel:+00000000000"
+                >+00000000000</a
+              ><a class="footer__link-item" href="">email</a
+              > --><a class="footer__link-item" href="">Pilatusstrasse 45, Luzern, Suiza</a>
+          </div>
+          <div class="footer__follow">
+            <h3 class="footer__h3">Follow us</h3>
+            <a class="footer__link-item" href=""
+              ><img class="footer__img" src="img/footer1.svg" alt="" /></a
+            ><a class="footer__link-item" href=""
+              ><img class="footer__img" src="img/footer2.svg" alt="" /></a
+            ><a class="footer__link-item" href=""
+              ><img class="footer__img" src="img/footer3.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="aos/dist/aos.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

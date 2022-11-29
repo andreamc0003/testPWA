@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico?" type="image/x-icon">
+    <title>Thank you</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="signup-overlay form-overlay">
+        <div class="form-wrapper"> 
+          <form class="form-window" id="signup-window" action="thank-you.html">
+            <div class="form-window__cross"></div>
+            <div class="form-inner">
+              <h4 class="form-inner__h4">Get started</h4>
+              <fieldset class="form-inner__fieldset">
+                <label class="form-inner__name-label" for="signup-form-name">First name</label>
+                <input class="form-inner__signup-name-input" id="signup-form-name" type="text" placeholder="First name" autocomplete="off"><span class="form-inner__error-name form-inner__error hidden">This field is required</span>
+              </fieldset>
+              <fieldset class="form-inner__fieldset">
+                <label class="form-inner__name-label" for="signup-form-last">Last name</label>
+                <input class="form-inner__signup-last-input" id="signup-form-last" type="text" placeholder="Last name" autocomplete="off"><span class="form-inner__error-last form-inner__error hidden">This field is required</span>
+              </fieldset>
+              <fieldset class="form-inner__fieldset">
+                <label class="form-inner__mail-label" for="signup-form-email">Enter your email address</label>
+                <input class="form-inner__mail-input" id="signup-form-email" type="email" placeholder="Example@gmail.com" autocomplete="off"><span class="form-inner__error-mail form-inner__error hidden">This field is required</span>
+              </fieldset>
+              <fieldset class="form-inner__fieldset">
+                <label class="form-inner__tel-label" for="signup-form-phone">Enter your phone number</label>
+                <input class="form-inner__signup-tel-input" id="signup-form-phone" type="tel" autocomplete="off"><span class="form-inner__signup-error-tel form-inner__error hidde"></span>
+              </fieldset>
+              <button class="button btn form-inner__submit form-inner__submit--inactive" id="signup-form-send" type="submit">Get started</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="header__wrapper"> <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="logo" width="70"></a>
+        <button class="header__hamburger"></button>
+        <button class="header__cross"></button>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item"> <a class="header__link" href="index.html">Home</a></li>
+            <li class="header__item"> <a class="header__link" href="about-forex.html">About Forex</a></li>
+            <li class="header__item"> <a class="header__link" href="market-analysis.html">Market Analysis</a></li>
+            <li class="header__item"> <a class="header__link" href="pricing.html">Pricing</a></li>
+            <li class="header__item"> <a class="header__link" href="about-us.html">About us</a></li>
+            <li class="header__item"> <a class="header__link" href="education.html">Education</a></li>
+            <li class="header__item"> <a class="header__link" href="contacts.html"> Contacts </a></li>
+          </ul>
+        </nav>
+        <select class="header__btn header__select btn" onchange="location=this.value">
+          <option value="index.html" selected>🇬🇧 &emsp;English</option>
+          <option value="de/index.html">🇩🇪&emsp;German</option>
+        </select>
+      </div>
+    </header>
+    <main class="wrapper">
+      <section class="thank1"> 
+        <div class="thank1__wrapper">
+          <h1 class="thank1__h1">Thank you for choosing us</h1>
+          <h2 class="thank1__h2">Our managers will get in touch with you soon</h2>
+          <div class="contacts1__list thank1__list"><a class="contacts1__link" href=""><img src="img/contacts11.svg" alt="">
+              <p>+00000000000</p></a><a class="contacts1__link" href=""><img src="img/contacts11.svg" alt="">
+              <p>+00000000000</p></a><a class="contacts1__link" href=""><img src="img/contacts12.svg" alt="">
+              <p>email</p></a><a class="contacts1__link" href=""><img src="img/contacts13.svg" alt="">
+              <p>address</p></a></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer px-5 pt-5 pb-4">
+      <div class="row mx-lg-5">
+        <div class="footer__logo col-12 col-md-4 col-lg-7 px-0"><a href="index.html"><img src="img/logo.svg" alt="CCLOUDFX" width="100"></a></div>
+        <div class="col-12 col-md-4 col-lg-2 px-0 ps-md-5 ps-lg-0 d-none d-md-block">
+          <div class="row d-flex align-items-start mx-0">
+            <div class="footer__h3 col-12 px-0">NAVIGATION</div>
+            <div class="col-12 px-0"><a class="footer__link-item" href="about-forex.html">Forex</a></div>
+            <div class="col-12 px-0"><a class="footer__link-item" href="market-analysis.html">Market analysis</a></div>
+            <div class="col-12 px-0"><a class="footer__link-item" href="about-us.html">About us</a></div>
+            <div class="col-12 px-0"><a class="footer__link-item" href="education.html">Education</a></div>
+            <div class="col-12 px-0"><a class="footer__link-item" href="contacts.html">Contacts</a></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 px-0">
+          <div class="row d-flex align-items-start mx-0 mt-5 mt-md-0 mt-lg-0">
+            <div class="footer__h3 col-12 px-0">CONTACTS</div>
+            <dvi class="col-12 d-flex align-items-center mb-3 px-0"><img src="img/phone-call.png" alt="Phone"><a class="footer__link-item ms-2" href="tel:+41215303116">+41215303116</a></dvi>
+            <dvi class="col-12 d-flex align-items-center mb-3 px-0"><img src="img/mail.png" alt="Phone"><a class="footer__link-item ms-2" href="mail:support@ccloudfx.com">support@ccloudfx.com</a></dvi>
+            <div class="col-12 d-flex align-items-center px-0"><img src="img/map-pin.png" alt="Phone"><a class="footer__link-item ms-2" href="https://www.google.com.ec/maps/place/Hotel+MONOPOL+Luzern/@47.0497602,8.3067773,17z/data=!3m1!4b1!4m8!3m7!1s0x478ffb989fbe2a15:0xf862c1a697aa6b77!5m2!4m1!1i2!8m2!3d47.0497566!4d8.308966?hl=es">1873 ILC 2022 Pilatusstrasse 45, 6003 Luzern, Swiss</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-lg-5 mt-5 mt-md-0 mt-lg-0 px-0">
+        <div class="footer__policies col-12 pb-2"><a class="footer__terms" href="docs/REFUND_POLICY.pdf">Terms and Conditions</a><a href="docs/PRIVACY_POLICY.pdf">Privacy Policy</a></div>
+        <div class="footer__copyright col-12">©  All rights reserved 2022</div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"> </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
