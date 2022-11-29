@@ -55,10 +55,15 @@
             <li class="header__item"> <a class="header__link" href="contacts.html"> Contacts </a></li>
           </ul>
         </nav>
-        <select class="header__btn header__select btn" onchange="location=this.value">
-          <option value="index.html" selected>🇬🇧 &emsp;English</option>
-          <option value="de/index.html">🇩🇪&emsp;German</option>
-        </select>
+        <div class="dropdown dropdown-language">
+          <button class="dropdown-toggle header__select" type="button" data-bs-toggle="dropdown" aria-expanded="false" onchange="location=this.value"><img src="img/english-flag.png" alt="English"><span> English</span></button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item d-flex align-items-center" href="index.html"><img src="img/english-flag.png" alt="English">
+                <p class="mx-2">English</p></a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="de/index.html"><img src="img/germany-flag.png" alt="German">
+                <p class="mx-2">German</p></a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="wrapper">
