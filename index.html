@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&amp;display=swap">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Niramit:wght@200;300;400;500;600;700&amp;display=swap">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico?" type="image/x-icon">
     <title>Main</title>
@@ -15,298 +13,185 @@
   <body>
     <header class="header">
       <div class="signup-overlay form-overlay">
-        <div class="form-wrapper"> 
-          <form class="form-window" id="signup-window" action="thank-you.html">
-            <div class="form-window__cross"></div>
-            <div class="form-inner">
-              <h4 class="form-inner__h4">Get started</h4>
-              <fieldset class="form-inner__fieldset">
-                <label class="form-inner__name-label" for="signup-form-name">First name</label>
-                <input class="form-inner__signup-name-input" id="signup-form-name" type="text" placeholder="First name" autocomplete="off"><span class="form-inner__error-name form-inner__error hidden">This field is required</span>
-              </fieldset>
-              <fieldset class="form-inner__fieldset">
-                <label class="form-inner__name-label" for="signup-form-last">Last name</label>
-                <input class="form-inner__signup-last-input" id="signup-form-last" type="text" placeholder="Last name" autocomplete="off"><span class="form-inner__error-last form-inner__error hidden">This field is required</span>
-              </fieldset>
-              <fieldset class="form-inner__fieldset">
-                <label class="form-inner__mail-label" for="signup-form-email">Enter your email address</label>
-                <input class="form-inner__mail-input" id="signup-form-email" type="email" placeholder="Example@gmail.com" autocomplete="off"><span class="form-inner__error-mail form-inner__error hidden">This field is required</span>
-              </fieldset>
-              <fieldset class="form-inner__fieldset">
-                <label class="form-inner__tel-label" for="signup-form-phone">Enter your phone number</label>
-                <input class="form-inner__signup-tel-input" id="signup-form-phone" type="tel" autocomplete="off"><span class="form-inner__signup-error-tel form-inner__error hidde"></span>
-              </fieldset>
-              <button class="button btn form-inner__submit form-inner__submit--inactive" id="signup-form-send" type="submit">Get started</button>
-            </div>
-          </form>
-        </div>
+        <div class="form-wrapper"> </div>
       </div>
-      <div class="header__wrapper"> <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="logo" width="70"></a>
+      <div class="header__wrapper"><a class="header__logo" href="index.html"><img src="img/logo.svg" alt="logo" width="90"></a>
         <button class="header__hamburger"></button>
         <button class="header__cross"></button>
         <nav class="header__nav">
           <ul class="header__menu">
-            <li class="header__item"> <a class="header__link" href="index.html">Home</a></li>
-            <li class="header__item"> <a class="header__link" href="about-forex.html">About Forex</a></li>
-            <li class="header__item"> <a class="header__link" href="market-analysis.html">Market Analysis</a></li>
-            <li class="header__item"> <a class="header__link" href="pricing.html">Pricing</a></li>
-            <li class="header__item"> <a class="header__link" href="about-us.html">About us</a></li>
-            <li class="header__item"> <a class="header__link" href="education.html">Education</a></li>
-            <li class="header__item"> <a class="header__link" href="contacts.html"> Contacts </a></li>
-            <li class="header__item"><a class="header__btn btn signup" href="https://webtrader.ccloudfx.com/login">Get started</a></li>
+            <li class="header__item header__expand">
+              <p>About us</p><a class="header__item-sub" href="who-we-are.html">Who we are?</a>
+            </li>
+            <li class="header__item"><a class="header__link" href="pricing.html"> Pricing</a></li>
+            <li class="header__item header__expand">
+              <p>Education</p><a class="header__item-sub" href="about.html">About investments</a><a class="header__item-sub" href="your-first-step.html">Your first step in investments</a>
+            </li>
+            <li class="header__item header__expand">
+              <p>Product</p><a class="header__item-sub" href="stocks.html">Stocks</a><a class="header__item-sub" href="how-to-buy-stocks.html">How to buy stocks?</a>
+            </li>
+            <li class="header__item header__expand">
+              <p>Main features</p><a class="header__item-sub" href="advantages.html">Advantages of working with us</a><a class="header__item-sub" href="start-now.html">Why should you start now?</a>
+            </li>
+            <li class="header__item header__expand mr-3">
+              <p>Support</p><a class="header__item-sub" href="faq.html">Frequently asked questions</a><a class="header__item-sub" href="contacts.html">Contacts</a>
+            </li>
           </ul>
         </nav>
-        <div class="dropdown dropdown-language">
-          <button class="dropdown-toggle header__select" type="button" data-bs-toggle="dropdown" aria-expanded="false" onchange="location=this.value"><img src="img/english-flag.png" alt="English"><span> English</span></button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item d-flex align-items-center" href="index.html"><img src="img/english-flag.png" alt="English">
-                <p class="mx-2">English</p></a></li>
-            <li><a class="dropdown-item d-flex align-items-center" href="de/index.html"><img src="img/germany-flag.png" alt="German">
-                <p class="mx-2">German</p></a></li>
-          </ul>
-        </div>
+        <select class="btn header__select" onchange="location = this.value">
+          <option value="index.html" selected>English</option>
+          <option value="de/index.html">German</option>
+        </select>
       </div>
     </header>
+    <div class="header__sub-wrapper hidden">
+      <div class="header__sub-inner">
+        <div class="header__subnav"><a class="header__subitem" href="who-we-are.html">Who we are?</a></div>
+      </div>
+    </div>
+    <div class="header__sub-wrapper hidden display-none"></div>
+    <div class="header__sub-wrapper hidden">
+      <div class="header__sub-inner">
+        <div class="header__subnav"><a class="header__subitem" href="about.html">About investments</a><a class="header__subitem" href="your-first-step.html">Your first step in investments</a></div>
+      </div>
+    </div>
+    <div class="header__sub-wrapper hidden">
+      <div class="header__sub-inner">
+        <div class="header__subnav"><a class="header__subitem" href="stocks.html">Stocks</a><a class="header__subitem" href="how-to-buy-stocks.html">How to buy stocks?</a></div>
+      </div>
+    </div>
+    <div class="header__sub-wrapper hidden">
+      <div class="header__sub-inner">
+        <div class="header__subnav"><a class="header__subitem" href="advantages.html">Advantages of working with us</a><a class="header__subitem" href="start-now.html">Why should you start now?</a></div>
+      </div>
+    </div>
+    <div class="header__sub-wrapper hidden">
+      <div class="header__sub-inner">
+        <div class="header__subnav"><a class="header__subitem" href="faq.html">Frequently asked questions</a><a class="header__subitem" href="contacts.html">Contacts</a></div>
+      </div>
+    </div>
     <main class="wrapper">
       <section class="main1">
-        <div class="main1__wrapper"> 
-          <div class="main1__inner">
-            <h1 class="main1__h1 white">EVERYTHING YOU NEED EXACTLY WHEN YOU NEED IT</h1>
+        <div class="main1__wrapper">
+          <div class="main1__left">
+            <h1 class="main1__h1">Investing in stocks is easy Start with us now</h1>
           </div><img class="main1__img" src="img/main1.png" alt="">
-        </div><a class="main1__down desktop" href="#main2"><img class="main1__down-img" src="img/main1down.svg" alt=""></a>
+        </div>
+        <div class="main1__slider"> 
+          <div class="main1__slide"> <img src="img/main-slide1.svg" alt=""></div>
+          <div class="main1__slide"> <img src="img/main-slide2.svg" alt=""></div>
+          <div class="main1__slide"> <img src="img/main-slide3.svg" alt=""></div>
+          <div class="main1__slide"> <img src="img/main-slide4.svg" alt=""></div>
+          <div class="main1__slide"> <img src="img/main-slide5.svg" alt=""></div>
+          <div class="main1__slide"> <img src="img/main-slide6.svg" alt=""></div>
+          <div class="main1__slide"> <img src="img/main-slide7.svg" alt=""></div>
+          <div class="main1__slide"> <img src="img/main-slide8.svg" alt=""></div>
+          <div class="main1__slide"> <img src="img/main-slide9.svg" alt=""></div>
+          <div class="main1__slide"> <img src="img/main-slide10.svg" alt=""></div>
+        </div>
       </section>
-      <section class="main2" id="main2">
-        <h2 class="main2__h2">Our awards</h2>
+      <section class="main2"> 
+        <h2 class="main2__h2">Investing is for everyone</h2>
         <ul class="main2__list"> 
-          <li class="main2__item"> <img class="main2__img" src="img/main2.svg" alt="">
-            <h4 class="main2__h4">BEST PERFORMING BROKER EUROPE 2021</h4>
+          <li class="main2__item"> 
+            <h3 class="main2__h3"> <img src="img/main21.svg" alt="">Invest Any Amount</h3>
+            <p class="main2__p">Many financial institutions have minimum deposit requirements. In other words, they won’t accept your account application unless you deposit a certain amount of money. But to start investing with us, it is not necessary to invest a minimum amount of money, you can start trading with only 1 dollar.</p>
           </li>
-          <li class="main2__item"> <img class="main2__img" src="img/main2.svg" alt="">
-            <h4 class="main2__h4">BEST FINANCIAL BROKER EUROPE 2021</h4>
+          <li class="main2__item"> 
+            <h3 class="main2__h3"> <img src="img/main22.svg" alt="">Trade in Real Time</h3>
+            <p class="main2__p">Our platform facilitates trading activities in real-time because we have reliable real-time trade reporting. You can make your buy and sell at any time and be sure that your predictions are going to be based on the real dates of the market.</p>
           </li>
-          <li class="main2__item"> <img class="main2__img" src="img/main2.svg" alt="">
-            <h4 class="main2__h4">BEST FOREX BROKER EUROPE 2021</h4>
+          <li class="main2__item"> 
+            <h3 class="main2__h3"> <img src="img/main23.svg" alt="">Control your income</h3>
+            <p class="main2__p">If you’re not fully in control of your income this can paint a pretty bleak picture. Fortunately, there are different plans that you can take to have greater control than most over your income. It’s up to you to develop an actionable plan for increasing your earnings and improving how you manage your money.</p>
           </li>
         </ul>
       </section>
-      <section class="main3">
-        <div class="main3__wrapper">
-          <h2 class="main3__h2 white">Benefits of Using the Forex Market</h2>
-          <ul class="main3__list white">
-            <li class="main3__item">
-              <p class="white">Taking advantage of Forex volatility</p>
-            </li>
-            <li class="main3__item">
-              <p class="white">Profit from high liquidity</p>
-            </li>
-            <li class="main3__item">
-              <p class="white">Trading 24 hours a day</p>
-            </li>
-            <li class="main3__item">
-              <p class="white">Get more out of your capital thanks to leverage</p>
-            </li>
-            <li class="main3__item">
-              <p class="white">Flexibility</p>
-            </li>
-            <li class="main3__item">
-              <p class="white">Choose from a wide variety of currency pairs</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="main4">
-        <h2 class="main4__h2">Choose Your Plan</h2>
-        <ul class="main4__list"> 
-          <li class="main4__item"> 
-            <div class="main4__inner">
-              <p>Basic</p>
-              <ul> 
-                <li>Technical Support 24/7</li>
-                <li>Expert Chart Analysis</li>
-                <li>7-day free trial of expertly managed account</li>
-                <li>Access to 5 markets</li>
-                <li>Zero withdrawal fees</li>
-                <li>
-                   1:10 Leverage TEMPORARY<br>(14 business days)</li>
-              </ul>
+      <section class="main3"> 
+        <h2 class="main3__h2">What are the benefits of investing in stocks?</h2>
+        <ul class="main3__list"> 
+          <li class="main3__item"> <span class="main3__item-number">1</span>
+            <div class="main3__inner">
+              <h3 class="main3__h3">Easy process of buying and selling.</h3>
+              <p class="main3__item-text">The process of buying and selling in the stock market is simple and easy for all investors. Buying of stocks is done with the help of a broker, financial planner, or online mode.</p>
             </div>
           </li>
-          <li class="main4__item"> 
-            <div class="main4__inner">
-              <div class="main4__choose">Most popular</div>
-              <p>Silver</p>
-              <ul> 
-                <li>Personal Market Analyst</li>
-                <li>Customized Introductory class</li>
-                <li>Monthly Meetings with Analyst</li>
-                <li>Technical Assistance 24/7</li>
-                <li>30-day free trial of expertly managed account</li>
-                <li>Guaranteed access to 5 financial markets</li>
-                <li>1 Monthly Withdrawal at zero cost</li>
-                <li>30% Bonus</li>
-                <li>1:10 Leverage</li>
-              </ul>
+          <li class="main3__item"> <span class="main3__item-number">2</span>
+            <div class="main3__inner">
+              <h3 class="main3__h3">It allows you to take advantage of the growing economy.</h3>
+              <p class="main3__item-text">This is usually due to several factors like increased job creation, leading to an increase in income and sales.      </p>
             </div>
           </li>
-          <li class="main4__item"> 
-            <div class="main4__inner">
-              <div class="main4__choose">Best deal</div>
-              <p>Gold</p>
-              <ul> 
-                <li>Personal Market Analyst</li>
-                <li>Customized Introductory class</li>
-                <li>Weekly Meetings with Analyst</li>
-                <li>Technical Assistance 24/7</li>
-                <li>Membership of the expertly-managed account</li>
-                <li>Guaranteed access to 5 financial markets</li>
-                <li>50% Bonus</li>
-                <li>1 Weekly withdrawal at no charge</li>
-                <li>1:20 Leverage + ACCESS to BASIC EVENTS with 1:50</li>
-                <li>1:5 Leverage on Expertly Managed Account</li>
-              </ul>
+          <li class="main3__item"><span class="main3__item-number">3</span>
+            <div class="main3__inner">
+              <h3 class="main3__h3">Flexibility to invest in smaller amounts.</h3>
+              <p class="main3__item-text">An investor looking to enter the stock market can start their small investments in the stock market by purchasing stocks of small-cap or mid-cap companies but in smaller units.  </p>
             </div>
           </li>
-          <li class="main4__item"> 
-            <div class="main4__inner">
-              <p>Platinum</p>
-              <ul> 
-                <li>Personal Analyst</li>
-                <li>Weekly Meetings with Analyst</li>
-                <li>Technical Assistance 24/7</li>
-                <li>24/5 WhatsApp Access to dealing department</li>
-                <li>Guaranteed access to 5 financial markets</li>
-                <li>1 Weekly Withdrawal at no charge</li>
-                <li>75% Bonus</li>
-                <li>1:50 Leverage + ACCESS FOR VIP SIGNALS + ACCESS For ALL EVENTS</li>
-                <li>1:10 Leverage on Expertly Managed Account</li>
-                <li>Access to Platinum Market for ultra-fast execution</li>
-              </ul>
-            </div>
-          </li>
-          <li class="main4__item"> 
-            <div class="main4__inner">
-              <h2 class="main4__small">By invitation only</h2>
-              <p>VIP</p>
-              <ul> 
-                <li>Expertly Managed Account</li>
-                <li>1:25 Leverage on Expertly Managed Account</li>
-                <li>Zero Withdrawal charges</li>
-                <li>50% Default Trading Insuranse</li>
-                <li>No Swaps</li>
-                <li>Access to dealing department via WhatsApp</li>
-                <li>WhatsApp Access to Analyst</li>
-                <li>1 Monthly Full-Protection Trade</li>
-                <li>1 Monthly Market Research(confirm with your AccountManager)</li>
-              </ul>
+          <li class="main3__item"><span class="main3__item-number">4</span>
+            <div class="main3__inner">
+              <h3 class="main3__h3">Flexibility to invest in smaller amounts.</h3>
+              <p class="main3__item-text">An investor looking to enter the stock market can start their small investments in the stock market by purchasing stocks of small-cap or mid-cap companies but in smaller units. </p>
             </div>
           </li>
         </ul>
       </section>
-      <section class="main5">
-        <h2 class="main5__h2">New Generation Forex Trading</h2>
-        <ul class="main5__list"> 
-          <li class="main5__item">
-            <div class="main5__inner"> <img class="main5__img" src="img/main51.svg" alt="">
-              <p class="main5__p">Trade with confidence with a reputable brokerage firm </p>
+      <section class="main4"> 
+        <h2 class="main4__h2">6 stocks for beginners</h2>
+        <div class="main4__list"> <img class="main4__img" src="img/main41.png" alt=""><img class="main4__img" src="img/main42.png" alt=""><img class="main4__img" src="img/main43.png" alt=""><img class="main4__img" src="img/main44.png" alt=""><img class="main4__img" src="img/main45.png" alt=""><img class="main4__img" src="img/main46.png" alt=""></div>
+      </section>
+      <section class="main6"> 
+        <h2 class="main6__h2">Need some inspiration?</h2>
+        <ul class="main6__list"> 
+          <li class="main6__item"> <img class="main6__img" src="img/main61.jpg" alt="">
+            <div> 
+              <h3 class="main6__h3">Ray Dalio</h3>
+              <p class="main6__p">He started investing as a kid. When he was 12, he bought shares of Northeast Airlines for $300, which later tripled in value when the company merged with another firm. After graduation, he traded commodity futures on the floor of the New York Stock Exchange and later became the Director of Commodities at Dominick & Dominick LLC. <br><br>Mr. Dalio and his firm enjoyed early success but also encountered some hiccups along the way, which made him modify his investment approach. In 2005, Bridgewater Associates became the largest hedge fund in the world. By the end of 2017, the firm had over $160 billion in assets. His personal net worth as of 2019 was over $18.4 billion.<br><br>Ray Dalio has authored several books, including How the Economic Machine Works, A Template for Understanding Big Debt Crises, and Principles, which was Amazon’s #1 business book of 2017 and a New York Times #1 best-seller. He has spent over $760 million in philanthropy through his Dalio Foundation. The Foundation supports inner-city education, nature conservation, polio eradication, and microfinance.</p>
             </div>
           </li>
-          <li class="main5__item">
-            <div class="main5__inner"> <img class="main5__img" src="img/main52.svg" alt="">
-              <p class="main5__p">Fund protection</p>
+          <li class="main6__item"> <img class="main6__img" src="img/main62.jpg" alt="">
+            <div> 
+              <h3 class="main6__h3">Abigail Pierrepont Johnson</h3>
+              <p class="main6__p">Abigail Pierrepont Johnson was born in December 1961 to the Johnson family — owners of the American investment firm, Fidelity Investments<br><br>2012, Ms. Johnson was named the president of the company and took over from her father as the CEO in 2014. She now doubles as the chairman of the company — a role she has held since 2016. The Johnson family owned a 49% share of the company as of 2013, while she owns about 24.5% stake.<br><br>According to Forbes, Fidelity Investments has close to $2.7 trillion worth of assets under management. Under her management, the company has embraced cryptocurrencies. In 2018, it launched a platform that allows investors to trade ethereum and bitcoin.</p>
             </div>
           </li>
-          <li class="main5__item">
-            <div class="main5__inner"> <img class="main5__img" src="img/main53.svg" alt="">
-              <p class="main5__p">Multiple currencies</p>
-            </div>
-          </li>
-          <li class="main5__item">
-            <div class="main5__inner"> <img class="main5__img" src="img/main54.svg" alt="">
-              <p class="main5__p">Direct execution</p>
-            </div>
-          </li>
-          <li class="main5__item">
-            <div class="main5__inner"> <img class="main5__img" src="img/main55.svg" alt="">
-              <p class="main5__p">Excellent and committed customer service</p>
+          <li class="main6__item"> <img class="main6__img" src="img/main63.jpg" alt="">
+            <div> 
+              <h3 class="main6__h3">Paul Tudor Jones</h3>
+              <p class="main6__p">An American investor and asset manager, Mr. Tudor founded the Tudor Investment Corporation in 1980. The asset management company — which is focused on research and investing in stocks, commodities, currencies, and fixed income assets — has its headquarters in Greenwich, Connecticut.<br><br>His firm started small but grew very fast as he recorded early success in his investments. One of his major profitable trades was going short in the 1987 flash crash. He predicted the Black Monday crash and amassed huge short positions before the crash. His firm has grown steadily since then, recording double-digit returns yearly on average.<br><br>According to Forbes, his company manages over $7 billion in assets, and his personal worth is about $5.1 billion.</p>
             </div>
           </li>
         </ul>
-      </section>
-      <section class="main6">
-        <div class="main6__wrapper">
-          <h2 class="main6__h2 white">How to trade Forex?</h2>
-          <ul class="main6__list"> 
-            <li class="main6__item">
-              <h4 class="main6__h4 white">1. Select a currency pair</h4>
-              <p class="main6__p white">Choosing a currency pair to trade requires an individual approach, which depends on your personal preferences. Beginners are advised to start with major pairs. Depending on your trading style, you may concentrate on one pair or trade several. </p>
-            </li>
-            <li class="main6__item">
-              <h4 class="main6__h4 white">2. Analyze the market</h4>
-              <p class="main6__p white">Before you start trading in the currency market you must consider the time of activity of the currency pair and its volatility. Volatility is the range of fluctuation of a currency pair during a given time. So, some currency pairs trade in a relatively narrow range, while for others, the range is wide.</p>
-            </li>
-            <li class="main6__item">
-              <h4 class="main6__h4 white">3. Read the quote</h4>
-              <p class="main6__p white">Don't wait for the precise moment when the market is ready to invest - start now. </p>
-            </li>
-            <li class="main6__item">
-              <h4 class="main6__h4 white">4. Pick your position</h4>
-              <p class="main6__p white">The choice of the position will be influenced by speculative motives since your decision will be based on the expectations that exist or that you perceive about the future evolution of the value of the position. So, you may opt for two different modes concerning the currency in which it begins to trade financially: either a short or a long position.</p>
-            </li>
-          </ul>
-        </div>
       </section>
       <section class="main7"> 
-        <h2 class="main7__h2">Ready to learn more about Forex?</h2>
-        <h3 class="main7__h3">No matter your skill level, we have videos and guides to help you take your trading to the next level.</h3>
-        <ul class="main7__list"> 
-          <li class="main7__item" data-aos="fade-down"> 
-            <h4 class="main7__h4">New trader?</h4>
-            <p class="main7__p">Welcome, we’ll show you how forex works and why you should trade it.</p><a class="btn main7__btn" href="education.html#edu2">Create a plan</a>
-          </li>
-          <li class="main7__item" data-aos="fade-down"> 
-            <h4 class="main7__h4">Have some experience?</h4>
-            <p class="main7__p">Create a trading plan that will help you to reach your goals. </p><a class="btn main7__btn" href="education.html#edu2">Create a plan</a>
-          </li>
-          <li class="main7__item" data-aos="fade-down"> 
-            <h4 class="main7__h4">Experienced broker?</h4>
-            <p class="main7__p">You can learn about new specific strategies and how to use them.</p><a class="btn main7__btn" href="education.html#edu4">View strategies</a>
-          </li>
-        </ul>
+        <h2 class="main7__h2">Start making profit now</h2><img class="main7__video desktop" src="img/main74.jpg" alt=""><img class="main7__video mobile" src="img/main74m.jpg" alt="">
       </section>
     </main>
-    <footer class="footer px-5 pt-5 pb-4">
-      <div class="row mx-lg-5">
-        <div class="footer__logo col-12 col-md-4 col-lg-7 px-0"><a href="index.html"><img src="img/logo.svg" alt="CCLOUDFX" width="100"></a></div>
-        <div class="col-12 col-md-4 col-lg-2 px-0 ps-md-5 ps-lg-0 d-none d-md-block">
-          <div class="row d-flex align-items-start mx-0">
-            <div class="footer__h3 col-12 px-0">NAVIGATION</div>
-            <div class="col-12 px-0"><a class="footer__link-item" href="about-forex.html">Forex</a></div>
-            <div class="col-12 px-0"><a class="footer__link-item" href="market-analysis.html">Market analysis</a></div>
-            <div class="col-12 px-0"><a class="footer__link-item" href="about-us.html">About us</a></div>
-            <div class="col-12 px-0"><a class="footer__link-item" href="education.html">Education</a></div>
-            <div class="col-12 px-0"><a class="footer__link-item" href="contacts.html">Contacts</a></div>
+    <footer class="footer"> 
+      <div class="footer__wrapper"> 
+        <div class="footer__subscribe"> 
+          <div class="footer__logo"> <img src="img/logo.svg" alt="logo" width="90"></div>
+          <p class="footer__copyright desktop">&copy; All rights reserved</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__contacts"> 
+            <h3 class="footer__h3">Contacts</h3>
+            <li class="footer__link-item"><img src="img/phone.svg" alt="phone"><a class="footer__link-ref" href="tel: +41315202177">+41315202177</a></li>
+            <li class="footer__link-item"> <img src="img/mail.svg" alt="mail"><a class="footer__link-ref" href="mailto: support@stocksmarketsfx.com">support@stocksmarketsfx.com</a></li>
+            <li class="footer__link-item"><img src="img/address.svg" alt="address">
+              <p class="footer__link-ref">Reidweg 16, 8600 Dübendorf, Schweiz</p>
+            </li>
+          </div>
+          <div class="footer__nav"> 
+            <h3 class="footer__h3">Navigation</h3><a class="footer__link-item" href="who-we-are.html">About us</a><a class="footer__link-item" href="about.html">Education</a><a class="footer__link-item" href="stocks.html">Product</a><a class="footer__link-item" href="advantages.html">Main features</a><a class="footer__link-item" href="faq.html">Support</a><a class="footer__link-item" href="contacts.html">Contacts</a>
           </div>
         </div>
-        <div class="col-12 col-md-4 col-lg-3 px-0">
-          <div class="row d-flex align-items-start mx-0 mt-5 mt-md-0 mt-lg-0">
-            <div class="footer__h3 col-12 px-0">CONTACTS</div>
-            <dvi class="col-12 d-flex align-items-center mb-3 px-0"><img src="img/phone-call.png" alt="Phone"><a class="footer__link-item ms-2" href="tel:+41215303116">+41215303116</a></dvi>
-            <dvi class="col-12 d-flex align-items-center mb-3 px-0"><img src="img/mail.png" alt="Phone"><a class="footer__link-item ms-2" href="mail:support@ccloudfx.com">support@ccloudfx.com</a></dvi>
-            <div class="col-12 d-flex align-items-center px-0"><img src="img/map-pin.png" alt="Phone"><a class="footer__link-item ms-2" href="https://www.google.com.ec/maps/place/Hotel+MONOPOL+Luzern/@47.0497602,8.3067773,17z/data=!3m1!4b1!4m8!3m7!1s0x478ffb989fbe2a15:0xf862c1a697aa6b77!5m2!4m1!1i2!8m2!3d47.0497566!4d8.308966?hl=es">1873 ILC 2022 Pilatusstrasse 45, 6003 Luzern, Swiss</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="row mx-lg-5 mt-5 mt-md-0 mt-lg-0 px-0">
-        <div class="footer__policies col-12 pb-2"><a class="footer__terms" href="docs/REFUND_POLICY.pdf">Terms and Conditions</a><a href="docs/PRIVACY_POLICY.pdf">Privacy Policy</a></div>
-        <div class="footer__copyright col-12">©  All rights reserved 2022</div>
+        <p class="footer__copyright mobile">&copy; All rights reserved</p>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"> </script>
     <script src="js/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/intlTelInput.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main4-5.js"></script>
     <script src="js/main.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main1.js"></script>
   </body>
 </html>

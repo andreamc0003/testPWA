@@ -1,9 +1,9 @@
 jQuery(function () {
-  const faqButton = $(".forex5__h4");
+  const faqButton = $(".faq1__h3");
   function faqExpand() {
-    let parent = $(this).parents(".forex5__item");
-    $(parent).find(".forex5__p").toggle();
-    $(parent).find(".forex5__h4").toggleClass("forex5__h4-up");
+    let parent = $(this).parents(".faq1__item");
+    $(parent).find(".faq1__p").toggleClass("display-none");
+    $(parent).find(".faq1__h3").toggleClass("faq1__h3-up");
   }
   faqButton.on("click", faqExpand);
 });

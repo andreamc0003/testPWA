@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Niramit:wght@200;300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Compliance</title>
+  </head>
+  <body>
+    <header class="header"><!--forms  -->
+<!-- LOGIN FORM -->
+<div class="login-overlay form-overlay">
+  <div class="form-wrapper">
+    <form id="login-window" class="form-window" action="thank-you.html">
+      <div class="form-window__cross"></div>
+      <div class="form-inner">
+        <h4>Log in</h4>
+        <!-- NAME -->
+        <fieldset class="form-inner__fieldset">
+          <label for="login-form-name">Enter your full name*</label>
+          <input
+            type="text"
+            id="login-form-name"
+            placeholder="Your name"
+            required
+            autocomplete="off"
+          />
+          <span
+            class="form-inner__login-error-name form-inner__error display-none"
+            >This field is required</span
+          >
+        </fieldset>
+        <!-- PASSWORD -->
+        <fieldset class="form-inner__fieldset">
+          <label class="form-inner__mail-label" for="login-form-password"
+            >Enter your password*</label
+          >
+          <input
+            type="password"
+            id="login-form-password"
+            placeholder="Password"
+            required
+          />
+          <span
+            class="
+              form-inner__login-error-password form-inner__error
+              display-none
+            "
+            >This field is required</span
+          >
+        </fieldset>
+        <button type="submit" id="login-form-send" class="btn" required>
+          Log in
+        </button>
+        <p class="bottom-p">
+          Don’t have an account yet?
+          <a class="signup" href="javascript:void(0);">Sign up</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- SIGNUP FORM -->
+<div class="signup-overlay form-overlay">
+  <div class="form-wrapper">
+    <form
+      id="signup-window"
+      class="form-window"
+      action="thank-you.html"
+      action="thank-you.html"
+    >
+      <div class="form-window__cross"></div>
+      <div class="form-inner">
+        <h4>Sign up</h4>
+        <!-- NAME -->
+        <fieldset class="form-inner__fieldset">
+          <label class="form-inner__name-label" for="signup-form-name"
+            >Enter your full name*</label
+          >
+          <input
+            type="text"
+            id="signup-form-name"
+            class="form-inner__name-input"
+            placeholder="Your name"
+            required
+            autocomplete="off"
+          />
+          <img
+            class="form-inner__name-valid form-inner__valid display-none"
+            src="img/contact-valid.svg"
+            alt=""
+          />
+          <img
+            class="form-inner__name-invalid form-inner__invalid display-none"
+            src="img/popup-info.svg"
+            alt=""
+          />
+          <div class="form-inner__popup-name form-inner__popup">
+            <span>Name must contain only Latin characters</span>
+            <ul>
+              <li><p>Capital Latin letters: from A to Z</p></li>
+              <li><p>Lowercase Latin letters: from a to z</p></li>
+            </ul>
+          </div>
+          <span
+            class="form-inner__error-name form-inner__error display-none"
+          ></span>
+        </fieldset>
+        <!-- PHONE -->
+        <fieldset class="form-inner__fieldset">
+          <label class="form-inner__tel-label" for="signup-form-phone"
+            >Enter your phone number*</label
+          >
+          <input
+            class="form-inner__tel-input"
+            id="signup-form-phone"
+            type="tel"
+            required
+            autocomplete="off"
+          />
+          <img
+            class="form-inner__tel-valid form-inner__valid display-none"
+            src="img/contact-valid.svg"
+            alt=""
+          />
+          <img
+            class="form-inner__tel-invalid form-inner__invalid display-none"
+            src="img/popup-info.svg"
+            alt=""
+          />
+          <div class="form-inner__popup-tel form-inner__popup">
+            <span
+              >Phone number must be according to your regional standards</span
+            >
+          </div>
+          <span
+            class="form-inner__error-tel form-inner__error display-none"
+          ></span>
+        </fieldset>
+        <!-- EMAIL -->
+        <fieldset class="form-inner__fieldset">
+          <label class="form-inner__mail-label" for="signup-form-email"
+            >Enter your email address</label
+          >
+          <input
+            type="email"
+            id="signup-form-email"
+            class="form-inner__mail-input"
+            placeholder="Example@gmail.com"
+            required
+            autocomplete="off"
+          />
+          <img
+            class="form-inner__mail-valid form-inner__valid display-none"
+            src="img/contact-valid.svg"
+            alt=""
+          />
+          <img
+            class="form-inner__mail-invalid form-inner__invalid display-none"
+            src="img/popup-info.svg"
+            alt=""
+          />
+          <div class="form-inner__popup-mail form-inner__popup">
+            <span>Email must contain</span>
+            <ul>
+              <li><p>Latin letters</p></li>
+              <li><p>@ symbol</p></li>
+              <li><p>domain like .com</p></li>
+            </ul>
+          </div>
+          <span
+            class="form-inner__error-mail form-inner__error display-none"
+          ></span>
+        </fieldset>
+        <!-- PASSWORD -->
+        <fieldset class="form-inner__fieldset">
+          <label class="form-inner__password-label" for="signup-form-password"
+            >Enter your password*</label
+          >
+          <input
+            type="password"
+            id="signup-form-password"
+            class="form-inner__password-input"
+            placeholder="Password"
+            required
+            autocomplete="off"
+          />
+          <img
+            class="form-inner__password-valid form-inner__valid display-none"
+            src="img/contact-valid.svg"
+            alt=""
+          />
+          <img
+            class="
+              form-inner__password-invalid form-inner__invalid
+              display-none
+            "
+            src="img/popup-info.svg"
+            alt=""
+          />
+          <div class="form-inner__popup-password form-inner__popup">
+            <span
+              >To protect your data, you need to come up with a secure password.
+              It must contain</span
+            >
+            <ul>
+              <li><p>8 or more characters</p></li>
+              <li><p>uppercase latin letters</p></li>
+              <li><p>lowercase latin letters</p></li>
+              <li><p>numbers</p></li>
+              <li>
+                <p>Special symbols <br />!"#$%&'()*+,-./:;</p>
+              </li>
+            </ul>
+          </div>
+          <span
+            class="form-inner__error-password form-inner__error display-none"
+          ></span>
+        </fieldset>
+        <!-- CONFIRM PASSWORD -->
+        <fieldset class="form-inner__fieldset">
+          <label class="form-inner__confirm-label" for="signup-confirm-password"
+            >Confirm your password*</label
+          >
+          <input
+            type="password"
+            id="signup-confirm-password"
+            class="form-inner__confirm-input"
+            placeholder="Confirm your password"
+            required
+            autocomplete="off"
+          />
+          <img
+            class="form-inner__confirm-valid form-inner__valid display-none"
+            src="img/contact-valid.svg"
+            alt=""
+          />
+          <span
+            class="form-inner__error-confirm form-inner__error display-none"
+          ></span>
+        </fieldset>
+        <button
+          class="btn form-inner__submit"
+          id="signup-form-send"
+          type="submit"
+          required
+        >
+          Sign Up
+        </button>
+        <p class="bottom-p">
+          Have an account already?
+          <a class="login" href="javascript:void(0);">Log In</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- forms -->
+
+      <div class="header__wrapper"> <a class="header__logo" href="index.html"> <img src="/img/logo.svg" alt="logo" width="90"/></a>
+        <button class="header__hamburger"></button>
+        <button class="header__cross"></button>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item"> 
+              <p>About us</p><a class="header__item-sub" href="who-we-are.html">Who we are?</a>
+            </li>
+            <li class="header__item"> 
+              <p>Education</p><a class="header__item-sub" href="about.html">About investments</a><a class="header__item-sub" href="your-first-step.html">Your first step in investments</a><a class="header__item-sub" href="blog.html">Blog</a>
+            </li>
+            <li class="header__item"> 
+              <p>Product</p><a class="header__item-sub" href="stocks.html">Stocks</a><a class="header__item-sub" href="how-to-buy-stocks.html">How to buy stocks?</a>
+            </li>
+            <li class="header__item"> 
+              <p>Main features</p><a class="header__item-sub" href="advantages.html">Advantages of working with us</a><a class="header__item-sub" href="start-now.html">Why should you start now?</a>
+            </li>
+            <li class="header__item"> 
+              <p>Support</p><a class="header__item-sub" href="faq.html">Frequently asked questions</a><a class="header__item-sub" href="contacts.html">Contacts</a>
+            </li>
+            <li class="header__item"> <a class="header__link" href="contacts.html"> Contacts </a></li>
+            <li class="header__item"><a class="header__btn btn login" id="login" href="javascript:void(0)">Log in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="header__sub-wrapper hidden"> 
+      <div class="header__sub-inner">
+        <div class="header__subnav"><a class="header__subitem" href="who-we-are.html">Who we are?</a></div>
+      </div>
+    </div>
+    <div class="header__sub-wrapper hidden"> 
+      <div class="header__sub-inner">
+        <div class="header__subnav"><a class="header__subitem" href="about.html">About investments</a><a class="header__subitem" href="your-first-step.html">Your first step in investments</a><a class="header__subitem" href="blog.html">Blog</a></div>
+      </div>
+    </div>
+    <div class="header__sub-wrapper hidden"> 
+      <div class="header__sub-inner">
+        <div class="header__subnav"><a class="header__subitem" href="stocks.html">Stocks</a><a class="header__subitem" href="how-to-buy-stocks.html">How to buy stocks?</a></div>
+      </div>
+    </div>
+    <div class="header__sub-wrapper hidden"> 
+      <div class="header__sub-inner">
+        <div class="header__subnav"><a class="header__subitem" href="advantages.html">Advantages of working with us</a><a class="header__subitem" href="start-now.html">Why should you start now?</a></div>
+      </div>
+    </div>
+    <div class="header__sub-wrapper hidden"> 
+      <div class="header__sub-inner">
+        <div class="header__subnav"><a class="header__subitem" href="faq.html">Frequently asked questions</a><a class="header__subitem" href="contacts.html">Contacts</a></div>
+      </div>
+    </div>
+    <main class="wrapper"> 
+      <section class="compl1"> 
+        <h2 class="compl1__h2">Compliance</h2>
+        <p class="compl1__p desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quo est quae ipsam corporis quas, saepe voluptatum odio dolores. Nobis, qui! Nam sequi corporis illo doloremque, libero dolorum repellat id.Aut consequatur fuga harum sunt soluta vel sapiente exercitationem culpa laboriosam quo in molestias iusto optio, aspernatur excepturi animi deleniti minima cum recusandae numquam velit accusamus assumenda iure? Eligendi, ab.Consectetur et dignissimos nihil, sapiente voluptates at sed laudantium consequuntur nobis incidunt consequatur labore minima officia, adipisci repellendus. Quibusdam qui asperiores quam veritatis accusamus perferendis quas eveniet architecto blanditiis dolores!Deserunt, sunt dignissimos aspernatur quasi voluptatem fugiat eaque vitae pariatur, harum doloribus iusto eligendi error sapiente eos voluptate autem enim optio nam ea esse. Officiis, veniam.<br><br> Id, quos veritatis. Omnis.Rem reiciendis nulla cum, dolores ratione quae corrupti odit laboriosam earum. A rerum nihil cum voluptates nam molestias quod similique veniam, numquam possimus error eos dolore deleniti praesentium adipisci asperiores?Alias explicabo magni similique. Alias repellat corrupti repudiandae ratione vitae. Sed enim eos dignissimos ut a sequi consequatur corporis illo itaque nemo nisi consequuntur laborum quos, iure cumque ratione iste!Omnis, quod. <br><br>Earum laboriosam inventore eos quis, nostrum officiis autem quos omnis sed deserunt iusto amet quod dolor est. Quia et illo voluptatum vero error praesentium, neque quo voluptate. <br><br>Laboriosam.Quae necessitatibus culpa placeat quasi consectetur ullam nam esse optio laborum perferendis, minima aspernatur unde porro nesciunt eius sint iusto modi, saepe magni assumenda eligendi libero velit fugiat voluptatum? Numquam.Pariatur, iste numquam saepe vel ratione consectetur doloremque voluptatum dolore sed soluta corrupti perspiciatis aut, eveniet optio necessitatibus officiis repellat ducimus atque commodi, amet ea reiciendis neque. Natus, error unde.<br><br>Beatae ad aperiam adipisci sit voluptas voluptate amet fugit, necessitatibus deleniti provident, temporibus rem sapiente, reprehenderit dolorem? Omnis eius quas cupiditate ipsam quidem corrupti, aliquid harum! Non error rem quae.Deleniti velit repellat id ipsa atque quisquam sint obcaecati mollitia neque amet. Harum earum hic sint repellendus laborum sunt adipisci tempore accusantium accusamus a quae totam reprehenderit, at veritatis cupiditate.Odit eaque, assumenda vitae aliquid minima dolores cum culpa, possimus omnis a repellendus reprehenderit neque esse quis iste? Quo odio doloribus tenetur quidem veniam distinctio. Totam, quaerat. Eos, similique itaque!Eos unde enim saepe, voluptatem, pariatur quas quibusdam voluptas sapiente quia ea veritatis ullam facere similique excepturi quae incidunt, repellendus omnis ab sit deserunt. Maxime minus officiis facilis unde dolore.<br><br>Mollitia corrupti culpa, accusamus eos vitae ea libero odio nisi earum iure autem, corporis quaerat illum officiis accusantium voluptatibus, quas ullam! Id aliquam, ratione voluptates reiciendis ducimus qui maiores delectus.Iusto aperiam, alias voluptates ut iure quasi? Quod labore sequi, obcaecati, reiciendis ut, repellendus veritatis quasi natus nisi ullam esse. Facere amet laudantium perferendis illo cupiditate nostrum ea maxime repudiandae.Error iusto delectus laudantium non dolores corporis magnam, necessitatibus soluta perferendis suscipit libero blanditiis nostrum optio repellat tempora officiis autem nisi vero ea. Voluptate voluptatem esse ipsam ipsum ratione dolorem.Ullam ea accusamus voluptate aspernatur modi eveniet soluta, inventore repellat, odio voluptatum nam laudantium numquam ipsum est et rerum. Non sapiente eligendi vitae vel voluptatem iste harum delectus quam soluta.<br><br>Id alias nam vel modi quia deserunt repudiandae suscipit ducimus nostrum cum iure molestias magni asperiores, quidem cumque reiciendis laborum molestiae similique iste corrupti eos omnis repellendus. Eum, unde deleniti!Labore eos ducimus officia, doloribus deserunt quos nam in rerum incidunt repellendus asperiores ab quae, repudiandae debitis neque odit ex consectetur minus dolorem ullam quasi! Et dolore at architecto ad?Ullam perferendis porro laborum, distinctio, blanditiis quisquam aut sequi fugit esse, ipsum culpa! Quibusdam et doloremque, praesentium ut neque esse. Consequatur ipsam iure nam enim error rerum doloribus temporibus pariatur.</p>
+        <p class="compl1__p mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quo est quae ipsam corporis quas, saepe voluptatum odio dolores. Nobis, qui! Nam sequi corporis illo doloremque, libero dolorum repellat id.Aut consequatur fuga harum sunt soluta vel sapiente exercitationem culpa laboriosam quo in molestias iusto optio, aspernatur excepturi animi deleniti minima cum recusandae numquam velit accusamus assumenda iure? Eligendi, ab.Consectetur et dignissimos nihil, sapiente voluptates at sed laudantium consequuntur nobis incidunt consequatur labore minima officia, adipisci repellendus. Quibusdam qui asperiores quam veritatis accusamus perferendis quas eveniet architecto blanditiis dolores!Deserunt, sunt dignissimos aspernatur quasi voluptatem fugiat eaque vitae pariatur, harum doloribus iusto eligendi error sapiente eos voluptate autem enim optio nam ea esse. Officiis, veniam.</p>
+      </section>
+      <section class="compl2"><img src="img/compl21.jpg" alt=""><img src="img/compl22.jpg" alt=""><img src="img/compl23.jpg" alt=""></section>
+    </main>
+    <footer class="footer"> 
+      <div class="footer__wrapper"> 
+        <div class="footer__subscribe"> 
+          <form class="footer__form" action="">
+            <input class="footer__email" id="mail" type="email" name="" placeholder="Enter your email">
+            <input class="btn footer__btn nopointer" type="submit" value="Subscribe"><span class="footer__form-error display-none">This field is required</span>
+          </form>
+          <div class="footer__logo"><img src="/img/logo.svg" alt="logo" width="90"/> </div>
+          <p class="footer__copyright desktop">&copy; All rights reserved</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__contacts"> 
+            <h3 class="footer__h3">Contacts</h3><a class="footer__link-item" href="tel: +41315202177">+41315202177</a><a class="footer__link-item" href="tel: +41315202177">+41315202177</a><a class="footer__link-item" href="">Westgate House, 2a, Prebend St, London, N1 8PT</a>
+          </div>
+          <div class="footer__nav"> 
+            <h3 class="footer__h3">Navigation</h3><a class="footer__link-item" href="who-we-are.html">About us</a><a class="footer__link-item" href="about.html">Education</a><a class="footer__link-item" href="stocks.html">Product</a><a class="footer__link-item" href="advantages.html">Main features</a><a class="footer__link-item" href="faq.html">Support</a><a class="footer__link-item" href="contacts.html">Contacts</a>
+          </div>
+          <div class="footer__follow"> 
+            <h3 class="footer__h3">Follow us</h3><a class="footer__link-item" href="">Facebook</a><a class="footer__link-item" href="">Twitter</a><a class="footer__link-item" href="">Instagram</a>
+          </div>
+        </div>
+        <p class="footer__copyright mobile">&copy; All rights reserved</p>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick-compl.js"></script>
+  </body>
+</html>
